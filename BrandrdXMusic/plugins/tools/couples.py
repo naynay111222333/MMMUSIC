@@ -14,7 +14,7 @@ from BrandrdXMusic.mongo.couples_db import _get_image, get_couple
 POLICE = [
     [
         InlineKeyboardButton(
-            text="ရည်းစားရှာရန်  🥀",
+            text="ရည်းစားဝင်ရှာ 🥀",
             url=f"https://t.me/melody_cchat",
         ),
     ],
@@ -49,7 +49,7 @@ async def ctest(_, message):
     try:
      #  is_selected = await get_couple(cid, today)
      #  if not is_selected:
-         msg = await message.reply_text("Getting Couples...")
+         msg = await message.reply_text("ɢᴇɴᴇʀᴀᴛɪɴɢ ᴄᴏᴜᴘʟᴇs ɪᴍᴀɢᴇ...")
          #GET LIST OF USERS
          list_of_users = []
 
@@ -106,11 +106,11 @@ async def ctest(_, message):
          img.save(f'test_{cid}.png')
     
          TXT = f"""
-**အတွဲတွေဖြစ်သွားပါပြီ :
+**ᴛᴏᴅᴀʏ's ᴄᴏᴜᴘʟᴇ ᴏғ ᴛʜᴇ ᴅᴀʏ :
 
-{N1} + {N2} = ❤️
+{N1} + {N2} = 💚
 
-အောက်ကအဖွဲ့မှာလည်း ရှာနိုင်ပါသည်။ !!**
+ɴᴇxᴛ ᴄᴏᴜᴘʟᴇs ᴡɪʟʟ ʙᴇ sᴇʟᴇᴄᴛᴇᴅ ᴏɴ {tomorrow} !!**
 """
     
          await message.reply_photo(f"test_{cid}.png", caption=TXT, reply_markup=InlineKeyboardMarkup(POLICE),
