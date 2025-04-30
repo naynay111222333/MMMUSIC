@@ -49,7 +49,7 @@ async def ctest(_, message):
     try:
      #  is_selected = await get_couple(cid, today)
      #  if not is_selected:
-         msg = await message.reply_text("အတွဲချိတ်ပေးနေပါသည်...")
+         msg = await message.reply_text("Getting Couples...")
          #GET LIST OF USERS
          list_of_users = []
 
